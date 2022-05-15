@@ -1,3 +1,4 @@
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,11 +16,13 @@ import { VehiculosComponent } from './components/vehiculos/vehiculos.component';
 import { HomeComponent } from './components/home/home.component';
 
 
-const AppRoute = [
+const AppRoute:Routes = [
 
   { path: '', component: HomeComponent },
   { path: 'flotas', component: FlotasComponent },
-  { path: 'vehiculos', component: VehiculosComponent }
+  { path: 'vehiculos', component: VehiculosComponent },
+  { path: '**', component: HomeComponent }
+
 
 ]
 @NgModule({
@@ -38,7 +41,9 @@ const AppRoute = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot(AppRoute)
+
   ],
   providers: [],
   bootstrap: [AppComponent],
