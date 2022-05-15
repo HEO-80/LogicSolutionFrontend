@@ -1,0 +1,8 @@
+.header {
+
+  display: flex;
+  position: left;
+  justify-content: space-between;
+  align-items: left;
+
+}
