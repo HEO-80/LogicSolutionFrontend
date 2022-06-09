@@ -1,0 +1,40 @@
+
+
+
+
+<div>
+
+<div class="FormFlota">
+
+<div class="title">
+  <h4>Formulario flotas</h4>
+</div>
+
+
+  <div class="form-group">
+    <form [formGroup]="form">
+
+    <mat-form-field fxFlex="39" appearance="outline">
+      <mat-label>Nombre Flota</mat-label>
+      <input matInput formControlName="nombreFlota">
+    </mat-form-field>
+
+    <mat-form-field fxFlex="39" appearance="outline">
+      <mat-label>Tipo De Carga</mat-label>
+      <input matInput formControlName="tipoDeCarga">
+    </mat-form-field>
+
+
+
+
+    <div class="buton">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4" (click)="enviarFlota()">Enviar Información</button>
+    </div>
+
+  </form>
+</div>
+
+  </div>
+</div>
+

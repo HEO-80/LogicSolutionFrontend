@@ -1,0 +1,99 @@
+
+
+
+<a class="btn btn-primary" (click)="backClicked()" role="button">Volver</a>
+
+<div class="space"></div>
+
+<div class="texto">
+  <h1>Vehiculo</h1>
+</div>
+
+
+
+<div>
+
+
+  <div class="row">
+
+    <div class="col-5">
+      <div class="card" style="width: 18rem;">
+
+      <img [src]="vehiculo.img" class="card-img-top" alt="Chicago Skyscrapers"/>
+      <div class="card-body">
+        <h5 class="card-title"><span >{{vehiculo.nombre}}</span></h5>
+        <p class="card-text"><li class="list-group-item px-4"><span > Información = {{vehiculo.comentario}}</span></li></p>
+  </div>
+  <ul class="list-group list-group-light list-group-small">
+    <li class="list-group-item px-4"><span >Tipo = {{vehiculo.tipo}}</span></li>
+    <li class="list-group-item px-4"><span >Fecha registro = {{vehiculo.fechaRegistro}}</span></li>
+    <li class="list-group-item px-4"><span >ITV = {{vehiculo.itv}}</span></li>
+    <li class="list-group-item px-4"><span >Documentos = {{vehiculo.docs}}</span></li>
+    <li class="list-group-item px-4"><span >Km Recorridos = {{vehiculo.kmrecorridos}}</span></li>
+    <li class="list-group-item px-4"><span >Tipo de carga = {{vehiculo.carga}}</span></li>
+    <li class="list-group-item px-4"><span >flota Identificador = {{vehiculo.flotaId}}</span></li>
+  </ul>
+  <div class="card-body">
+    <button type="button" class="btn btn-info" (click)="VehiculoToEdit(vehiculo.id)"><span>Editar </span></button>
+    <button type="button" class="btn btn-danger" (click)="vehiculoDelete(vehiculo.id)"><span>Eliminar </span></button>
+  </div>
+
+</div>
+    </div>
+
+    <div class="col-5">
+
+
+      <div class="space"></div>
+      <div>
+         <img src="https://www.transporteprofesional.es/media/k2/items/cache/17af8af12bc80985c6eca0cd9ca4f76b_XL.jpg" class="d-block w-100" alt="Wild Landscape"/>
+       </div>
+         <div class="text1">
+           <h5>Primer nivel de recepción de información</h5>
+           <p>pone a tu disposición un producto probado con más de 7.000 clientes en todo el mundo..</p>
+         </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+<div class="texto">
+  <h2>Rutas realizadas</h2>
+</div>
+
+
+
+
+<!-- <div class="map">
+
+
+  <div class="container-fluid py-2" *ngIf="!isLoading">
+    <div class="d-flex flex-row flex-nowrap">
+
+      <div *ngFor="let map of vehiculo.maps">
+        <app-mapas [map]="map"></app-mapas>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+</div>
+
+
+<div class="container-fluid py-2">
+  <div class="d-flex flex-row flex-nowrap">
+    <div *ngFor="let map of vehiculo.maps">
+      <app-mapas [map]="map"></app-mapas>
+
+    </div>
+</div>
+
+</div>
+
+<div class="space"></div>
+

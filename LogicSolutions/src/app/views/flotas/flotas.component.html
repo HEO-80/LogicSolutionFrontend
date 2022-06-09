@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="space"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <img src="./assets/camion.png" alt="prof" width="500px" class="img-fluid">
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <img src="./assets/transporte-internacional.jpg" alt="prof" width="600px" class="img-fluid">
+      </div>
+      <div class="w-100"></div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h5>
+            Proporciona la locali­zación de vehículos en tiempo real, le permite comunicarse direc­ta­mente con sus conductores, ayuda a mejorar el compor­ta­miento de conducción, la optimi­zación de rutas sobre la marcha, ahorrando combustible y tiempo.
+          </h5>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h5>
+           La plataforma en línea que te conecta a tus vehículos. Las funcio­na­lides se pueden ampliar añadiendo diferentes dispo­si­tivos telemáticos en el vehículo y / o interfaces de conductor.
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+  <hr>
+
+  <div class="space"></div>
+
+  <div class="title">
+    <h1>Lista de flotas</h1>
+  </div>
+  <div class="buton">
+
+    <h4></h4>
+
+      <button class="btn btn-primary" (click)="clickAddFlota()">Añadir Flota</button>
+
+  </div>
+
+  <div class="form">
+
+    <div class="mat-elevation-z8">
+
+      <table mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Id </th>
+          <td mat-cell *matCellDef="let row"> {{row.id}} <td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="nombreFlota">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre Flota </th>
+          <td mat-cell *matCellDef="let row"><span (click)="openFlota(row.id)">{{row.nombreFlota}} </span>  <td>
+        </ng-container>
+
+        <!-- Type Column -->
+        <ng-container matColumnDef="tipoDeCarga">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Tipo de carga</th>
+          <td mat-cell *matCellDef="let row"> {{row.tipoDeCarga}} <td>
+        </ng-container>
+
+        <ng-container matColumnDef="cantidadVehiculos">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Cantidad Vehiculos </th>
+          <td mat-cell *matCellDef="let row"> {{row.cantidadVehiculos}} <td>
+        </ng-container>
+
+         <!-- atcions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Acciones </th>
+        <td mat-cell *matCellDef="let row">
+        <button type="button" class="btn btn-info" (click)="clickFlotaToEdit(row.id)"><span>Editar </span></button>
+        <button type="button" class="btn btn-danger" (click)="FlotaDelete(row.id)"><span >Borrar </span></button> <td>
+      </ng-container>
+
+        <!-- <tr *ngFor='let flota of flotas | async'>
+          <td>{{flota.id}}</td>
+          <td>{{flota.name}}</td>
+
+          <td>{{flota.category}}</td>
+
+          <td>{{flota.Author}}</td>
+
+          <td><button type="button" (click)='FlotaToEdit(flota.id)'>Edit</button></td>
+
+          <td><button type="button" (click)='FlotaDelete(flota.id)'>Delete</button></td>
+        </tr> -->
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <!-- <tr class="table-row" (click)="openCar(row.id)" mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+      <tr class="table-row" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="space"></div>
+
+</body>
+</html>

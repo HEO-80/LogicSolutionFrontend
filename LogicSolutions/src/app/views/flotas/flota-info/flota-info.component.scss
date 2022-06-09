@@ -1,0 +1,59 @@
+
+.btn{
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(145, 144, 144, 0.75);
+}
+
+.card {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(145, 144, 144, 0.75);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.texto {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.vehiculo {
+  position: relative;
+	padding: 0;
+}
+
+.idvehiculo{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(145, 144, 144, 0.75);
+  border-radius: 10px;
+}
+
+.card-img-top {
+  cursor: pointer;
+}
+.card-img-top:hover {
+  background-color: lightgrey;
+}
+
+.card-title {
+  cursor: pointer;
+}
+.card-title:hover {
+  background-color: lightgrey;
+}
+
+.text1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+
+}

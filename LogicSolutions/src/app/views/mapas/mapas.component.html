@@ -1,0 +1,17 @@
+
+<div class="mapa">
+<!-- <span>{{mapUrl}}</span> -->
+<iframe height="400" width="400" [src]="getMapSrc()">
+</iframe>
+
+<h5 class="card-title"><span >{{map?.nombre}}</span></h5>
+<ul class="list-group list-group-light list-group-small">
+  <li class="list-group-item px-4"><span >Latitude = {{map?.lat}}</span></li>
+  <li class="list-group-item px-4"><span >Longitud = {{map?.long}}</span></li>
+  <li class="list-group-item px-4"><span >Zoom = {{map?.zoom}}</span></li>
+</ul>
+  <div class="card-body">
+    <button type="button" class="btn btn-info" ><span>Editar </span></button>
+    <button type="button" class="btn btn-danger" ><span>Eliminar </span></button>
+  </div>
+</div>

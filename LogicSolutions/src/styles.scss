@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+  // margin-top: 100px;
+
+  background: rgb(255, 255, 255);
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif
+
+}
+
+html,body
+{
+   min-width: 300px;
+   width: 100%;
+}
+
+.space {
+  margin : 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(145, 144, 144, 0.75);
+}
+
+.btn{
+   margin-right: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(145, 144, 144, 0.75);
+}
+
+h1{
+
+  color:rgb(38, 38, 40)
+}
+h2{
+  color:rgb(36, 80, 150)
+}
+h3{
+  color:rgb(69, 115, 189)
+}
+h4{
+  color:rgb(85, 135, 215)
+}
+h5{
+  color:rgb(147, 148, 150)
+}
+h6{
+  color:rgb(86, 86, 88)
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 300px) and (max-width: 575px) {
+
+  body{
+    //width: 80%;
+  }
+  img{
+    width: 70%;
+  }
+  .btn{
+    width: 50%;
+  }
+
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

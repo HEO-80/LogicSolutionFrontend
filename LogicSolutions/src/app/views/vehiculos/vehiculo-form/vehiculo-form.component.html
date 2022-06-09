@@ -1,0 +1,83 @@
+
+
+
+
+<div class="FormVehiculo">
+
+  <div>
+    <div class="FormVehiculos">
+
+<div class="title">
+    <h4>Formulario Vehiculos</h4>
+</div>
+
+
+    <div class="form-group">
+      <form [formGroup]="form">
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>tipo</mat-label>
+        <input matInput formControlName="tipo">
+      </mat-form-field>
+
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>fechaRegistro</mat-label>
+        <input matInput type="date" formControlName="fechaRegistro">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>itv</mat-label>
+        <input matInput type="number" formControlName="itv">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>carga</mat-label>
+        <input matInput  formControlName="carga">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>comentario</mat-label>
+        <input matInput  formControlName="comentario">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>docs</mat-label>
+        <input matInput  formControlName="docs">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>kmrecorridos</mat-label>
+        <input matInput type="number" formControlName="kmrecorridos">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>Imagen</mat-label>
+        <input matInput  formControlName="img">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="39" appearance="outline">
+        <mat-label>Flota Ide</mat-label>
+        <input matInput  formControlName="flotaId">
+      </mat-form-field>
+
+      <div class="buton">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4" (click)="enviarVehiculo()">Enviar Información</button>
+      </div>
+
+    </form>
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+</div>

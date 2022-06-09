@@ -1,0 +1,53 @@
+body {
+  margin-top: 50px;
+}
+
+.footer {
+  margin-bottom: 50px;
+
+}
+
+.navbar {
+
+  padding-left: 200px;
+  padding-right: 200px;
+  // margin-left: 50px;
+  // margin-right: 50px;
+}
+.nav-item,
+  h1 {
+    width: 100%;
+    display: flex;
+    margin: 15px;
+  }
+
+@media (min-width: 200px) and (max-width: 575px) {
+  .nav-item,
+  .logo,
+  h1{
+
+  flex-direction: column;
+  text-align: center;
+  margin: 0px;
+
+  }
+  .navbar {
+
+    padding-left: 00px;
+    padding-right: 00px;
+
+}
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

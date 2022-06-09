@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="space"></div>
+
+  <div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-sm-7 col-md-7 col-xs-12">
+      <img src="./assets/pass.png" alt="prof" width="600px" class="img-fluid">
+    </div>
+    <div class="col-6 col-md-5">
+
+      <h4>
+        Una de las razones por las que más gente quiere unirse a la comunidad de flotas LogicSolutions, es porque está interesado en la seguridad de los vehículos.
+      </h4>
+      <img src="./assets/Logo1.png" alt="logo" width="80px" class="img-fluid">
+    </div>
+  </div>
+  </div>
+
+<div class="space"></div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <div class="FormContactos">
+
+        <h4>Formulario Contactos</h4>
+
+      <form [formGroup]="form">
+          <mat-form-field fxFlex="39" appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="nombre">
+          </mat-form-field>
+
+          <mat-form-field fxFlex="39" appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput formControlName="apellido">
+          </mat-form-field>
+
+
+          <mat-form-field fxFlex="30" appearance="outline">
+            <mat-label>Edad</mat-label>
+            <input matInput type="number" formControlName="edad">
+          </mat-form-field>
+
+          <mat-form-field fxFlex="39" appearance="outline">
+            <mat-label>direccion</mat-label>
+            <input matInput  formControlName="direccion">
+          </mat-form-field>
+
+          <mat-form-field fxFlex="39" appearance="outline">
+            <mat-label>email</mat-label>
+            <input matInput  formControlName="email">
+          </mat-form-field>
+
+          <mat-form-field fxFlex="39" appearance="outline">
+            <mat-label>empresa</mat-label>
+            <input matInput  formControlName="empresa">
+          </mat-form-field>
+
+          <mat-form-field fxFlex="39" appearance="outline">
+            <mat-label>comentario</mat-label>
+            <input matInput  formControlName="comentario">
+          </mat-form-field>
+
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4" (click)="enviarContacto()">Enviar Información</button>
+        </form>
+
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="box2">
+        <div>
+          <h5>
+            Comunicanos tus preucupaciones y nosotros te ayudamos a encontrar la mejor flota para ti.
+            Queremos ser un pilar en el que puedas apoyarte para dar impulso a tu empresa.
+            </h5>
+            <p></p>
+
+            <hr>
+
+            <h5>
+              Entre todas las respuestas encontradas solo nos importa una, y esa es tu opinion. Por lo que te invitamos a que nos cuentes como podemos mejorar juntos.
+            </h5>
+
+            <img src="./assets/Logo2.png" alt="logo" width="80px" class="img-fluid">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="space"></div>
+
+</body>
+</html>

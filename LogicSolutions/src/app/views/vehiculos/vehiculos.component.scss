@@ -1,0 +1,92 @@
+
+table {
+  width: 100%;
+}
+
+form {
+  width: 80%;
+  text-align: center;
+  display: flex; justify-content: center; width: 100%;
+  border-radius: 10px;
+}
+
+th {
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+span:hover{
+  cursor: pointer;
+}
+
+.info1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: gris;
+}
+
+.buton{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 250px;
+}
+
+.btn{
+  margin-right: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(145, 144, 144, 0.75);
+}
+
+.title{
+  text-align: center;
+}
+
+.table-row {
+  cursor: pointer;
+}
+.table-row:hover {
+  background-color: lightgrey;
+}
+
+.space {
+  margin : 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card-img-top{
+  width:100px;
+}
+
+.coment{
+  width:500px;
+}
+
+.seccion1{
+  background-color:  #F8F9FA;;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+  .buton{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+  }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
