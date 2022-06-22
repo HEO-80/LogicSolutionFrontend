@@ -53,7 +53,7 @@ refreshData$ = new Subject<void>();
   constructor(private activatedRoute: ActivatedRoute,private mapasService: MapasService , private router: Router, private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
-      this.mapSrc+='https://www.google.com/maps/embed/v1/place?key=AIzaSyA_ZTvMFhS6qjSpcQadNbwseLFqYc1Czgs&q=España&center=';
+      this.mapSrc+='https://www.google.com/maps/embed/v1/place?key=';
       this.mapSrc += `${this.map?.lat},${this.map?.long}`;
 
     // this.activatedRoute.paramMap.pipe(
